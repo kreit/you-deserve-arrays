@@ -1,9 +1,39 @@
 /******************
  * YOUR CODE HERE *
- ******************
+ ******************/
 
+let numbers = [40, 60, 100, 150]
 
+function getFirstItemFrom(arr){
+  return arr[0]
+}
 
+function getLastItemFrom(arr){
+  return arr[arr.length -1];  
+}
+
+function getIndex3(arr) {
+  if (arr.length > 3) {
+      return arr[3];
+  } else {
+      return arr[arr.length - 1]; 
+  }
+}
+
+function isLongList(arr) {
+  return arr.length >= 10;
+}
+
+function firstItemIsNumber(arr) {
+  return typeof arr[0] === "number";
+}
+
+function secondCharOfThirdString(arr) {
+  if (typeof arr[2] === 'string') {
+    return arr[2][1];
+  }
+  return "third item is not a string";
+}
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
